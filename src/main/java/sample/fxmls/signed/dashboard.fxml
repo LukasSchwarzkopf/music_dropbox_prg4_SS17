@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:controller="sample.controllers.DashboardController" xmlns:fx="http://javafx.com/fxml" fx:id="root">
+    <BorderPane fx:id="main_layout">
+        <top>
+            <GridPane maxHeight="80" fx:id="navigation">
+                <HBox spacing="10" alignment="bottom_left" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <Button text="Refresh Playlists" onAction="#renderNewPlaylist"/>
+                </HBox>
+                <HBox spacing="10" alignment="bottom_left" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                    <Button text="Add Musicfile" onAction="#renderNewMusicfile"/>
+                </HBox>
+            </GridPane>
+        </top>
+        <center>
+            <BorderPane fx:id="main_container">
+                <left>
+                    <GridPane fx:id="master">
+                        <HBox spacing="10" alignment="top_left" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <ListView fx:id="playlists"/>
+                        </HBox>
+                    </GridPane>
+                </left>
+                <center>
+                    <GridPane fx:id="detail">
+                        <HBox spacing="10" alignment="top_left" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <ListView fx:id="musicfiles"/>
+                        </HBox>
+                    </GridPane>
+                </center>
+            </BorderPane>
+        </center>
+    </BorderPane>
+</AnchorPane>

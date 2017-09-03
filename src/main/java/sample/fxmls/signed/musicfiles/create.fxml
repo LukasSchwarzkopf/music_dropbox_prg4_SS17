@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:controller="sample.controllers.MusicFilesController" xmlns:fx="http://javafx.com/fxml" fx:id="root">
+    <GridPane alignment="center" hgap="10" vgap="10" fx:id="musicfile_layout">
+
+        <padding>
+            <Insets top="25" right="25" bottom="10" left="25"/>
+        </padding>
+
+
+
+        <Text text="New Musicfile" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+
+        <Label text="Title:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="title" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <Label text="Interpret:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <TextField fx:id="interpret" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        <Label text="Album:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <TextField fx:id="album" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+        <Label text="Filepath:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+        <TextField fx:id="filepath" GridPane.columnIndex="1" GridPane.rowIndex="4" disable="true"/>
+        <Button text="choosefile" onAction="#choosefile" GridPane.columnIndex="2" GridPane.rowIndex="4"/>
+
+        <HBox spacing="10" alignment="bottom_right" GridPane.columnIndex="1" GridPane.rowIndex="5">
+            <Button text="Create" onAction="#create"/>
+        </HBox>
+        <Text fx:id="actiontarget" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+    </GridPane>
+</AnchorPane>

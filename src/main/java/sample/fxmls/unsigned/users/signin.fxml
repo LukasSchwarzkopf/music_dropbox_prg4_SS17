@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:controller="sample.controllers.UsersController" xmlns:fx="http://javafx.com/fxml" fx:id="root">
+    <GridPane  alignment="center" hgap="10" vgap="10" fx:id="login_layout">
+
+        <padding>
+            <Insets top="25" right="25" bottom="10" left="25"/>
+        </padding>
+
+
+        <Text text="Sign In" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+
+
+
+
+        <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="username" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        </TextField>
+
+        <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <PasswordField fx:id="password_field" GridPane.columnIndex="1" GridPane.rowIndex="2">
+        </PasswordField>
+
+
+
+
+        <HBox spacing="10" alignment="bottom_right" GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <Button text="Sign In" onAction="#signIn"/>
+            <Button text="SignUp" onAction="#renderSignup"/>
+        </HBox>
+        <Text fx:id="actiontarget" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+    </GridPane>
+</AnchorPane>
