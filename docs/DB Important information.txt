@@ -1,0 +1,4 @@
+Legen sie eine leere mysql Datenbank mit dem Namen „music_dropbox“ an, bevor sie den Datenbankdump „music_dropbox.sql “ importieren der sich im Projektordner befindet.
+Daten für die Anmeldung
+user: admin
+password: admin
